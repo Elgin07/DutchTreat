@@ -20,15 +20,8 @@ namespace DutchTreat
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("<html><body><h1>Hello World!</h1></body></html>");
-            });
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
         }
     }
 }
