@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "cd945696cff90a9745d51031f9ca805e22e8725c"
+    "signature": "6eaa1835233ae04e02ef9722a73be7f8e2875236"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,9 @@
         "dependencies": {
           "Microsoft.AspNetCore.All": "2.0.0",
           "Microsoft.NETCore.App": "2.0.0",
-          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0"
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.0.0",
+          "bootstrap": "3.3.7",
+          "jQuery": "3.2.1"
         },
         "runtime": {
           "DutchTreat.dll": {}
@@ -34,6 +36,12 @@
           "DutchTreat.dll": {}
         }
       },
+      "bootstrap/3.3.7": {
+        "dependencies": {
+          "jQuery": "3.2.1"
+        }
+      },
+      "jQuery/3.2.1": {},
       "Libuv/1.10.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0"
@@ -4237,6 +4245,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "bootstrap/3.3.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3YTWhPNh6UcnUvzw9u6A2/hy2w0h4lznxPbX6FY47lFia3+Ib4zBixTpW6YieYA/b2fLXbkjoD59OjcVF3cJXw==",
+      "path": "bootstrap/3.3.7",
+      "hashPath": "bootstrap.3.3.7.nupkg.sha512"
+    },
+    "jQuery/3.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sc4jRcsItNXUoNmnPtD9DEnHCy5d4u0GOdDSKYL+b7PKtwajKO1YBJA55241G2M9KRCwSbtxV4ti3gb4n/pIew==",
+      "path": "jquery/3.2.1",
+      "hashPath": "jquery.3.2.1.nupkg.sha512"
     },
     "Libuv/1.10.0": {
       "type": "package",
