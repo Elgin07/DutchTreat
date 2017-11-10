@@ -28,7 +28,8 @@ namespace DutchTreat
         {
             services.AddDbContext<DutchContext>(cfg =>
             {
-                cfg.UseSqlServer(_config.GetConnectionString("DutchConnectionString"));
+                cfg.UseSqlServer(_config.GetConnectionString("DutchConnectionString.MsSql"));
+                //cfg.UseMySql(_config.GetConnectionString("DutchConnectionString.MySql"));
             });
 
             services.AddTransient<IMailService, NullMailService>();
